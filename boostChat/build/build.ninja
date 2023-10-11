@@ -56,6 +56,20 @@ build CMakeFiles/boostChat.dir/main.cpp.o: CXX_COMPILER__boostChat_unscanned_Deb
   OBJECT_DIR = CMakeFiles/boostChat.dir
   OBJECT_FILE_DIR = CMakeFiles/boostChat.dir
 
+build CMakeFiles/boostChat.dir/Session.cpp.o: CXX_COMPILER__boostChat_unscanned_Debug /Users/seohwanjin/Programming/WServer/boostChat/Session.cpp || cmake_object_order_depends_target_boostChat
+  DEP_FILE = CMakeFiles/boostChat.dir/Session.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.82.0_1/include
+  OBJECT_DIR = CMakeFiles/boostChat.dir
+  OBJECT_FILE_DIR = CMakeFiles/boostChat.dir
+
+build CMakeFiles/boostChat.dir/Server.cpp.o: CXX_COMPILER__boostChat_unscanned_Debug /Users/seohwanjin/Programming/WServer/boostChat/Server.cpp || cmake_object_order_depends_target_boostChat
+  DEP_FILE = CMakeFiles/boostChat.dir/Server.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.82.0_1/include
+  OBJECT_DIR = CMakeFiles/boostChat.dir
+  OBJECT_FILE_DIR = CMakeFiles/boostChat.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target boostChat
@@ -64,7 +78,7 @@ build CMakeFiles/boostChat.dir/main.cpp.o: CXX_COMPILER__boostChat_unscanned_Deb
 #############################################
 # Link the executable boostChat
 
-build boostChat: CXX_EXECUTABLE_LINKER__boostChat_Debug CMakeFiles/boostChat.dir/main.cpp.o
+build boostChat: CXX_EXECUTABLE_LINKER__boostChat_Debug CMakeFiles/boostChat.dir/main.cpp.o CMakeFiles/boostChat.dir/Session.cpp.o CMakeFiles/boostChat.dir/Server.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
   OBJECT_DIR = CMakeFiles/boostChat.dir
   POST_BUILD = :

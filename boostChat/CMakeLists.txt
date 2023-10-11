@@ -13,7 +13,9 @@ if(NOT Boost_FOUND)
     message(FATAL_ERROR "Could not find boost!")
 endif ()
 include_directories(${Boost_INCLUDE_DIR})
-add_executable(boostChat main.cpp)
+add_executable(boostChat main.cpp
+        Session.cpp
+        Server.cpp)
 #프로그램 최소 버전
 
 
